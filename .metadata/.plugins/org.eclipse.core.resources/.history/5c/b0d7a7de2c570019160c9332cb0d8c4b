@@ -1,0 +1,38 @@
+package br.com.exercicios.udemy;
+
+import java.util.Scanner;
+
+public class SwitchCase {
+
+public static void main (String [] args) {
+	   
+	   Scanner e = new Scanner(System.in);
+	   
+	   int escolha;
+	   
+	   
+	    
+	       System.out.println("Digite um numero");
+	       escolha = e.nextInt();
+	       
+	       for (int i=0;i<3;i++) {
+	          switch (escolha) {
+	        case 1: 
+	    	   System.out.println("CASE 1");
+	        break; 
+	        case 2:
+	    	   System.out.println("CASE 2");
+	    	break;
+	        case 3:
+	        	System.out.println("CASE 3");       
+	       
+	       }
+	       }
+	     
+	  
+
+	   
+   }
+}
+
+

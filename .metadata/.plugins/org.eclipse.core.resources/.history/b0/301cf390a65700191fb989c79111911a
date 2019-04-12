@@ -1,0 +1,36 @@
+package Area;
+
+public class Circulo extends Shape {
+
+	public double raio;
+	
+	public Circulo(Cor color, double raio) {
+		super(color);
+		
+		this.raio = raio;
+	}
+	
+	public double getRaio() {
+		return raio;
+	}
+	
+	public void setRaio(double raio) {
+		this.raio = raio;
+	}
+	
+	double area = Math.PI * Math.pow(raio); 
+	
+	double soma = 0.0;
+	
+	@Override
+	public double Calculo(double valor) {
+	
+	   soma = area*2;
+	   
+	   return soma;
+	}
+	public String toString() {
+		return "$"+ Calculo(soma);
+	}
+
+}

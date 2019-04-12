@@ -1,0 +1,40 @@
+package Treino;
+
+public class Conta {
+
+	public String nome;
+	public int numero;
+	public double saldo;
+
+	public Conta(String nome, int numero, double saldo) {
+
+		this.nome = nome;
+		this.numero = numero;
+		this.saldo = saldo;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public double getSaldo() {
+		return saldo;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+
+	public double Pagamento() {
+		return saldo + 10;
+
+	}
+}

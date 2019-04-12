@@ -1,0 +1,22 @@
+package Interfaces;
+
+public class ModeloCarro {
+
+	public String modelo;
+	
+	public ModeloCarro() {}
+	
+	public ModeloCarro(String modelo) {
+		this.modelo = modelo;
+	}
+	
+	public String getModelo() {
+		return modelo;
+	}
+	
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+	
+	
+}

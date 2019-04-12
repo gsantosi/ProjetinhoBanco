@@ -1,0 +1,16 @@
+package db;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Properties;
+
+public class DB {
+   
+	public static Properties loadProperties() throws FileNotFoundException {
+		FileInputStream fs = new FileInputStream("Conector");
+			Properties proper = new Properties();
+			proper.load(fs);
+			return proper;
+		
+	}
+}

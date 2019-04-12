@@ -1,0 +1,11 @@
+package LogicaInterfaces;
+
+public interface FinanceiroTaxa {
+
+	double getTaxa();
+	
+	default double PagamentoTaxa(double preco, int mes) {
+		
+		return preco = Math.pow( 1.0 + getTaxa() / 100 , mes); 
+    }
+}

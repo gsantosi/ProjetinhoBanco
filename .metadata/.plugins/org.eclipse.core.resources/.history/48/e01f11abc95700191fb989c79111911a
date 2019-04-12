@@ -1,0 +1,32 @@
+package ImpostodeRenda;
+
+public class PessoaJuridica extends Pessoa {
+
+	public int fun;
+
+	public PessoaJuridica(String nome, double renda, int fun) {
+		super(nome, renda);
+
+		this.fun = fun;
+	}
+
+	public int getFun() {
+		return fun;
+	}
+
+	public void setFun(int fun) {
+		this.fun = fun;
+
+	}
+
+	public double Taxa(double valor) {
+		if(valor == 10) {
+			renda = renda*(14/100);
+		}
+	}
+
+
+
+
+
+}

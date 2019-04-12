@@ -1,0 +1,60 @@
+package InterfacesFixação;
+
+public class ServicePagamento {
+
+	
+	public double pagamentohr;
+	public double pagamentodia;
+	public TaxaBrasil taxa;
+	
+	public ServicePagamento(double pagamentohr, double pagamentodia, TaxaBrasil taxa) {
+		
+		this.pagamentohr = pagamentohr;
+		this.pagamentodia = pagamentodia;
+		this.taxa = taxa;
+	}
+	
+	public double getPagamentohr() {
+		return pagamentohr;
+	}
+	
+	public double getPagamentodia() {
+		return pagamentodia;
+	}
+	
+	public TaxaBrasil getTaxa() {
+		return taxa;
+	}
+	
+	public void setPagamentohr(double pagamentohr) {
+		this.pagamentohr = pagamentohr;
+	}
+	
+	public void setPagamentodia(double pagamentodia) {
+		this.pagamentodia = pagamentodia;
+	}
+	
+	public void setTaxa(TaxaBrasil taxa) {
+		this.taxa = taxa;
+	}
+	
+	public void controlePagamento(AluguelCarro aluguel) {
+		long a1 = aluguel.datainicio.getTime();
+		long a2 = aluguel.datafim.getTime();
+		double hrs = (double)(a1 - a2) / 1000 / 60 / 60;
+		
+		double pagamentobase;
+		if (hrs <= 12.0) {
+		
+			pagamentobase = Math.ceil(hrs) * pagamentohr;
+		}
+		else {
+			pagamentobase = Math.ceil(hrs / 24) * pagamentodia;
+		}
+		
+		double taxas = taxa.Tax(pagamentobase);
+		
+	    aluguel.setPagamento(new ControlePagamento(pagamentobase,taxas));
+	
+}
+	}

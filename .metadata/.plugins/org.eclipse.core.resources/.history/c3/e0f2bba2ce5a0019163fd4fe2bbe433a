@@ -1,0 +1,33 @@
+package Interfaces;
+
+public class ServicoPagamento {
+
+	public double pagamentobase;
+	public TaxaBrasil taxa;
+	
+	public ServicoPagamento(double pagamentobase, TaxaBrasil taxa) {
+		
+		this.pagamentobase = pagamentobase;
+		this.taxa = taxa;
+	}
+	
+	public double getPagamentobase() {
+		return pagamentobase;
+	}
+	
+	public TaxaBrasil getTaxa() {
+		return taxa;
+	}
+	
+	public void setPagamentobase(double pagamentobase) {
+	     this.pagamentobase = pagamentobase;
+	}
+	
+	public void setTaxa(TaxaBrasil taxa) {
+		this.taxa = taxa;
+	}
+	
+	public void ServicoControlePagamento(AluguelCarro aluguel) {
+		long a1 = aluguel.getDatainicio().getTime();
+	}
+}

@@ -1,0 +1,31 @@
+package Excecao;
+
+import java.util.Scanner;
+
+public class excecaoEx1 {
+   public static void main (String [] args) {
+	   
+      Scanner e = new Scanner(System.in);
+      
+      
+      String[] vetor = e.nextLine().split(" ");
+      int position = e.nextInt();
+      System.out.println(vetor[position]);
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   }
+
+}

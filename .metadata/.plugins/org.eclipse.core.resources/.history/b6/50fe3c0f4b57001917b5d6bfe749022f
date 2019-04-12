@@ -1,0 +1,29 @@
+package ProdutoPolimorfismo;
+
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ProdutoClass {
+   public static void main(String [] args) {
+	   
+	   Locale.setDefault(Locale.US);
+	   Scanner e = new Scanner(System.in);
+	   List<Produto> array = new ArrayList<>();
+	   SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+	   
+	   System.out.println("Quantos produtos deseja cadastrar?");
+	   int n = e.nextInt();
+	   
+	   for(int i=1; i<=n; i++) {
+		   System.out.println("Qual o tipo de produto? (n/i/u)");
+		   char w = e.next().charAt(0);
+	   }
+	   
+	   
+	   
+	   e.close();
+   }	
+}

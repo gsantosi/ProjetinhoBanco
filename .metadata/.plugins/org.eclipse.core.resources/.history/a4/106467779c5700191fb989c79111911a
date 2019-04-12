@@ -1,0 +1,12 @@
+package Area;
+
+public class Circulo extends Shape {
+
+	public Circulo(Cor color) {
+		super(color);
+		
+	}
+ 
+	
+	
+}

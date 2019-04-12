@@ -1,0 +1,33 @@
+package Interfaces;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class AluguelClass {
+  public static void main(String[] args) throws ParseException {
+	  
+	  Locale.setDefault(Locale.US);
+	  Scanner e = new Scanner(System.in);
+	  SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:ss");
+	  
+	  System.out.println("ENTRE COM OS DADOS DO ALUGUEL");
+	  
+	  System.out.println("Modelo do carro:");
+	  String modelo = e.next();
+	  
+	  System.out.println("Entre com a data inicio do aluguel:");
+	  Date datainicio = sdf.parse(e.next());
+	  
+	  System.out.println("Entre com a data de entrega:");
+	  Date datafim = sdf.parse(e.next());
+	  
+	  AluguelCarro ac = new AluguelCarro(datainicio,datafim, new ModeloCarro(modelo));
+	  
+	  
+	  e.close();
+  }
+	
+}

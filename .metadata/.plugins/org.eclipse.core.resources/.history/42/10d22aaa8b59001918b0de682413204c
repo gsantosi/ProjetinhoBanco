@@ -1,0 +1,26 @@
+package Excecao;
+
+import java.util.Scanner;
+
+public class excecaoEx1 {
+   public static void main (String [] args) {
+	   
+      Scanner e = new Scanner(System.in);
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   }
+
+}

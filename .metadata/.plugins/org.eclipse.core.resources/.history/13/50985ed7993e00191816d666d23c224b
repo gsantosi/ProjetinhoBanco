@@ -1,0 +1,16 @@
+package br.com.innocencio;
+
+public class Banco {
+
+	public static void main(String[] args) {
+
+  ContaC c = new ContaC("Gustavo", 10000, 500);
+  
+     System.out.println("O nome do titular é :" + c.getTitular());
+     System.out.println("O saldo do titular é :" + c.getSaldo());
+     System.out.println("O valor para o saque vai der de :" + c.getSaque());
+     System.out.println(" Gustavo Viado");
+ 
+	}
+
+}

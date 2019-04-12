@@ -1,0 +1,17 @@
+package Interfaces;
+
+import java.util.Date;
+
+public class CarMoni {
+
+	public Date dataini;
+	public Date fatafim;
+	
+	public CarMoni(Date dataini, Date datafim){
+		
+	}
+	
+	
+	
+	
+}

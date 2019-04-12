@@ -1,0 +1,19 @@
+package InterfacesFixação;
+
+public class TaxaBrasil implements ServiceTaxa	 {
+	@Override
+	public double Tax(double imposto) {
+		if(imposto <= 100.00) {
+             return imposto * 0.2;
+	}
+		else {
+			return imposto * 0.15;
+		}
+	
+	
+	
+	
+	
+}
+
+	}

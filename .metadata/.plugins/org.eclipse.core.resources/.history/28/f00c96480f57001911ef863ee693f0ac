@@ -1,0 +1,14 @@
+package FuncionariosPolimorfismo;
+
+public class FuncionarioTer extends Funcionario {
+   
+	public double add;
+	
+  public FuncionarioTer(double add) {
+	 // super (nome,hr,vhr);
+	  
+	        this.add = add;
+  }	
+	
+
+}

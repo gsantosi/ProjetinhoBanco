@@ -1,0 +1,35 @@
+package ImpostodeRenda;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class PessoaClass {
+  public static void main (String [] args) {
+	  
+	  Locale.setDefault(Locale.US);
+	  Scanner e = new Scanner(System.in);
+	  List<Pessoa> array = new ArrayList<>();
+	  
+	  System.out.println("Quantos funcionarios seram cadastrados:");
+	  int n = e.nextInt();
+	  
+	  for(int i=1; i<=n; i++) {
+		  System.out.println("Funcionario " +i+ "º:");
+		  
+		  System.out.println("O funcionario é Jurídico ou Fisico?(j/f)");
+		  char c = e.next().charAt(0);
+	  }
+	  
+  }
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+  }
+}

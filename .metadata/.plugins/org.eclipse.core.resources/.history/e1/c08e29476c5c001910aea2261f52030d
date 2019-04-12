@@ -1,0 +1,37 @@
+package ProjetoContrato;
+
+import java.util.Date;
+
+public class FinanceiroContrato {
+
+	private double valor;
+	private Date parcelas;
+	private int numero;
+	
+	public FinanceiroContrato(double valor, Date parcelas, int numero) {
+		this.valor = valor;
+		this.parcelas = parcelas;
+		this.numero = numero;
+	}
+	
+	public int getNumero() {
+		return numero;
+	}
+	
+	public double getValor() {
+		return valor;
+	}
+	
+	public Date getParcelas() {
+		return parcelas;
+	}
+	
+	public void setValor(double valor) {
+		this.valor = valor;
+	}
+	
+	public void setNumero(int numero) {
+		this.numero = numero;
+	}
+	
+}

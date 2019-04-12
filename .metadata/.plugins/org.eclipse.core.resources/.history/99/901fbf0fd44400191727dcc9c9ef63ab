@@ -1,0 +1,43 @@
+package br.com.innocencio.estudos;
+
+public class Mulher {
+
+	String sexo;
+	int idade;
+	String Cab;
+
+	public Mulher() {
+	}
+
+	public Mulher(String sexo, int idade, String cab) {
+
+	}
+
+	public String getSexo() {
+		return sexo;
+	}
+
+	public int getIdade() {
+		return idade;
+
+	}
+
+	public String getCab() {
+		return Cab;
+	}
+	public void setSexo (String sexo) {
+		this.sexo = sexo;
+	}
+	public void setIdade (int idade) {
+		this.idade = idade;
+	}
+	public void setCab (String cab) {
+		this.Cab = cab;
+	}
+
+}
+
+
+
+
+

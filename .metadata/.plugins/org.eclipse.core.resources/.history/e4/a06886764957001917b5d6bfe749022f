@@ -1,0 +1,28 @@
+package ProdutoPolimorfismo;
+
+import java.util.Date;
+
+public class ProdutoUsado extends Produto {
+
+	public Date data;
+	
+	public ProdutoUsado(String nome, double preco, Date data) {
+		super (nome,preco);
+		
+		this.data = data;
+	}
+	
+	public Date getData() {
+		return data;
+	}
+	
+	public void setData(Date data) {
+		this.data = data;
+	}
+	
+	@Override
+	public double EtiquetaPreco() {
+		return preco;
+	}
+	 
+}

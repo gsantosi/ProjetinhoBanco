@@ -1,0 +1,32 @@
+package InterfacesFixação;
+
+public class ControlePagamento {
+	
+	// CLASSE SÓ PARA ARMAZENAR OS DADOS DE OUTRA CLASSE.
+
+	public double pagamentobase;
+	public double taxa;
+
+	public ControlePagamento(double pagamentobase, double taxa) {
+
+		this.pagamentobase = pagamentobase;
+		this.taxa = taxa;
+	}
+
+	public double getPagamentobase() {
+		return pagamentobase;
+	}
+
+	public double getaxa() {
+		return taxa;
+	}
+	
+	public void setPaagamentobase (double pagamentobase) {
+		this.pagamentobase = pagamentobase;
+	}
+	
+	public void setTaxa(doule taxa) {
+		this.taxa = taxa;
+	}
+
+}

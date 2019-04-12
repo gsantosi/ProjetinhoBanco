@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\gsantosi\Desktop\Guilherme (Indra)\Projetos\Estudos\eclipse-workspace\.metadata\.plugins\org.eclipse.jdt.core
+557844122.index
+10053773.index
+3496871508.index

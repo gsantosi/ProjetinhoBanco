@@ -1,0 +1,25 @@
+package ProdutoPolimorfismo;
+
+public class ProdutoImportado extends Produto{
+
+	public double frete;
+	
+	public ProdutoImportado(String nome, double preco,double frete) {
+		super(nome,preco);
+		
+		this.frete = frete;
+	}
+	
+	public double getFrete() {
+		return frete;
+	}
+	
+	public void setFrete(double frete) {
+		this.frete = frete;
+	}
+	
+	@Override
+	public double EtiquetaProduto(){
+		return preco+frete;
+	}
+}

@@ -1,0 +1,13 @@
+package InterfacesFixação;
+
+public class ModeloCarro {
+
+	
+	 public String modelo;
+	 
+  
+
+
+
+
+}

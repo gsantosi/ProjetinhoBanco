@@ -1,0 +1,15 @@
+package InterfacesFixação;
+
+public class TaxaBrasil {
+
+	public void Tax(double imposto) {
+		if(imposto <= 100.00) {
+            imposto = imposto * 0.2;
+	}
+	
+	
+	
+	
+	
+}
+	}

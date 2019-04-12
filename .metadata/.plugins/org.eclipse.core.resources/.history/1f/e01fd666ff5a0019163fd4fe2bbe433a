@@ -1,0 +1,7 @@
+package InterfacesFixação;
+
+public class ServiceTaxa {
+
+	public void Taxas(double imposto) {
+	}
+}

@@ -1,0 +1,42 @@
+package Interfaces;
+
+public class ControlePagament {
+
+	public double pagamentobase;
+	public double taxa;
+	
+
+ public ControlePagament( double pagamentobase, double taxa, ModeloCarro modelo) {
+ 
+	 this.pagamentobase = pagamentobase;
+	 this.taxa = taxa;
+ }
+ 
+  public double getPagamentoBase() {
+	  return pagamentobase;
+  }
+  
+  public double getTaxa() {
+	  return taxa;
+  }
+  
+  public void setPagamentoBase(double pagamentobase) {
+	  this.pagamentobase = pagamentobase;
+  }
+  
+  public void serTaxa(double taxa) {
+	  this.taxa = taxa;
+  }
+
+  public double TatalPagamento() {
+	  return getPagamentoBase() + getTaxa(); 
+  }
+  
+  
+  
+
+
+
+}
+
+

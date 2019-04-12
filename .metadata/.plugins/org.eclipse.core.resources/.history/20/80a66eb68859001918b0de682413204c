@@ -1,0 +1,71 @@
+package ImpostodeRenda;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class PessoaClass {
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner e = new Scanner(System.in);
+		List<Pessoa> array = new ArrayList<>();
+		PessoaFisica pf = new PessoaFisica(null, 0, 0);
+		PessoaJuridica pj = new PessoaJuridica(null, 0, 0);
+
+		double gastos = 0.0;
+
+		System.out.println("Quantos funcionarios seram cadastrados:");
+		int n = e.nextInt();
+
+		for (int i = 1; i <= n; i++) {
+			System.out.println("Funcionario " + i + "º:");
+
+			System.out.println("O funcionario é Jurídico ou Fisico?(j/f)");
+			char c = e.next().charAt(0);
+
+			System.out.println("Digite seu nome: ");
+			String nome = e.next();
+
+			System.out.println("Digite a sua renda anual:");
+			double valor = e.nextDouble();
+			pf.Taxa(valor);
+
+			if (c == 'f') {
+
+				System.out.println("Teve gastos com saúde? (s/n)");
+				char resposta = e.next().charAt(0);
+				if (resposta == 's') {
+					System.out.println("Qual for o valor de gastos?");
+					gastos = e.nextDouble();
+
+				} else {
+					gastos = 0.0;
+				}
+
+				array.add(new PessoaFisica(nome, renda, gastos));
+			}
+
+			if (c == 'j') {
+
+				System.out.println("Quantos funcionarios são?");
+				int fun = e.nextInt();
+				pj.Taxa(fun);
+
+				Pessoa p = new PessoaJuridica(nome, renda, fun);
+				array.add(p);
+			}
+
+		}
+		
+		
+		for (Pessoa pe: array) {
+			 
+			System.out.println(pe);
+		}
+		
+
+		e.close();
+	}
+}

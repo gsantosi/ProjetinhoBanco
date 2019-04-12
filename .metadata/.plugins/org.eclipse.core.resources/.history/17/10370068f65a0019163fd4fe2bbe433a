@@ -1,0 +1,29 @@
+package InterfacesFixação;
+
+import java.text.SimpleDateFormat;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class AluguelClass {
+  public static void main(String[] args) {
+	  
+	  Locale.setDefault(Locale.US);
+	  Scanner e = new Scanner(System.in);
+	  SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:ss");
+	  
+	  System.out.println("ENTRE COM OS DADOS DO ALUGUEL:");
+	  
+	  System.out.println("Modelo do carro:");
+	  String modelo = e.next();
+	  
+	  System.out.println("Data de inicio do aluguel: (dd/MM/yyyy HH:ss)");
+	  Date datainicio = sdf.parse(e.next());
+	  
+	  System.out.println("Data final do aluguel: (dd/MM/yyyy HH:ss)");
+	  Date datafim = sdf.parse(e.next());
+	  
+	  
+	  
+	  
+  }
+}

@@ -1,0 +1,13 @@
+package ProdutoPolimorfismo;
+
+import java.util.Locale;
+
+public class ProdutoClass {
+   public static void main(String [] args) {
+	   
+	   Locale.setDefault(Locale.US);
+	   
+	   
+	   
+   }	
+}

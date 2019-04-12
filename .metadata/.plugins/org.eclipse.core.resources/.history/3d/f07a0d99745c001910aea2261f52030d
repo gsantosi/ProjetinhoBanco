@@ -1,0 +1,25 @@
+package LogicaInterfaces;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ContratoClass {
+   public static void main (String [] args) {
+	   
+	   Locale.setDefault(Locale.US);
+	   Scanner e = new Scanner(System.in);
+	   
+	   System.out.println("Digite o valor das parcelas:");
+	   double valor = e.nextDouble();
+     
+	   System.out.println("Digite o tanto de meses para parcelar:");
+	   int mes = e.nextInt();
+	   
+	    FinanceiroTaxa ft = new TaxaBrasil(2.0);
+	   
+	   
+	   
+	   
+	   
+   }
+}

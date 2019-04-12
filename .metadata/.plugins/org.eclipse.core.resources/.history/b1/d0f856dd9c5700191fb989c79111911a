@@ -1,0 +1,15 @@
+package Area;
+
+public class Retangulo extends Shape {
+
+	public Retangulo(Cor color) {
+		super(color);
+	}
+	
+	@Override
+	public double Calculo() {
+		double soma = 0,0;
+		return soma;
+	}
+
+}

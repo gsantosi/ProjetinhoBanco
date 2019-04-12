@@ -1,0 +1,41 @@
+package FuncionariosPolimorfismo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class FuncionarioTer extends Funcionario {
+
+	public double add;
+
+	List<FuncionarioTer> array = new ArrayList<>();
+
+	public FuncionarioTer(String nome, int hr, double vhr, double add) {
+		super(nome, hr, vhr);
+		this.add = add;
+	}
+
+	public double getAdd() {
+		return add;
+	}
+
+	public void setAdd(double add) {
+		this.add = add;
+	}
+
+	public double Pagamento() {
+		return super.Pagamento() + add * 1.1;
+	}
+
+	public String toStrig() {
+  return "DADOS DO FUNCIONÁRIO:________"+"\n"+"Nome: " +nome+ "\nHoras trabalhadas: "+hr+"\nValor das horas:"+vhr;	
+  }
+
+	
+	
+	
+	
+	
+	
+	
+	
+}

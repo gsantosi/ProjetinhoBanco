@@ -1,0 +1,19 @@
+package Arquivo;
+
+import java.io.File;
+import java.util.Scanner;
+
+public class ArquivoClass {
+   public static void main (String[] args) {
+	   
+	   Scanner e = new Scanner(System.in);
+
+	   File file = new File("C:\\Users\\gsantosi\\Desktop\\Guilherme (Indra)");
+	   
+	   System.out.println("Nome do seu arquivo: "+ file.getName());
+	   System.out.println("Lista de arquivos: " + file.getParent());
+	   System.out.println("Não sei kkkkkkk:" + file.getPath());
+
+   e.close();
+   }
+}

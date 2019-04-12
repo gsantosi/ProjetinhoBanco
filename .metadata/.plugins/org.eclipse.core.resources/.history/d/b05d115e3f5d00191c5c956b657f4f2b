@@ -1,0 +1,34 @@
+package db;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+import com.mysql.jdbc.Connection;
+
+public class DB {
+   
+	public static Connection conn = null;
+	
+	public static Connection getConnection() {
+		if(conn == null) {
+		   Properties proper = loadProperties();
+		   String url = proper.getProperty("Conectorurl");
+		}
+		
+		
+		
+		return conn;
+	}
+	
+	public static Properties loadProperties(){
+		try(FileInputStream fs = new FileInputStream("Conector")){
+			Properties proper = new Properties();
+			proper.load(fs);
+			return proper;
+		}
+		catch(IOException e) {
+			throw new DbException(e.getMessage());
+		}
+	}
+}

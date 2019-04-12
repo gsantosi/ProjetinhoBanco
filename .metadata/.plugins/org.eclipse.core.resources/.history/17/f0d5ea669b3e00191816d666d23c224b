@@ -1,0 +1,19 @@
+package br.com.innocencio;
+
+import java.util.Scanner;
+
+public class Banco {
+
+	@SuppressWarnings("resource")
+	public static void main(String[] args) {
+
+  ContaC c = new ContaC("Gustavo", 10000, 500);
+    Scanner e = new Scanner(System.in);
+       e.next("Digite o nome que do titular :" + c.getTitular());
+     System.out.println("O nome do titular é :" + c.getTitular());
+     System.out.println("O saldo do titular é :" + c.getSaldo());
+     System.out.println("O valor para o saque vai der de :" + c.getSaque());
+   
+
+}
+}

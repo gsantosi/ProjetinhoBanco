@@ -1,0 +1,61 @@
+package FuncionariosPolimorfismo;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class FuncionarioClass {
+	public static void main(String[] args) {
+
+		Locale.setDefault(Locale.US);
+		Scanner e = new Scanner(System.in);
+		List<Funcionario> array = new ArrayList<>();
+
+		char a;
+
+		String nome = null;
+		int hr = 0;
+		double vhr = 0.0;
+		double add = 0.0;
+
+		System.out.println("Entre com o numero de funcionários:");
+		int n = e.nextInt();
+
+		for (int i = 1; i <= n; i++) {
+			System.out.println("Funcionario " +i+ "º:");
+			
+				System.out.println("Digite o nome do funcionário:");
+				nome = e.next();
+
+				System.out.println("Digite a quantidade de horas trabalhadas:");
+				hr = e.nextInt();
+
+				System.out.println("Digite o valor das horas trabalhadas: ");
+				vhr = e.nextDouble();
+				
+				System.out.println("O funcionário é terceiro?(s/n)");
+				a = e.next().charAt(0);
+				
+			if (a == 's') {
+
+				System.out.println("Digite o valor das horas trabalhadas: ");
+				add = e.nextDouble();
+				
+				Funcionario f = new FuncionarioTer(nome, hr, vhr, add);
+				array.add(f);
+			}else {
+				Funcionario fu = new Funcionario(nome,hr,vhr);
+			}
+			
+
+			for (FuncionarioTer fu : array) {
+				System.out.println();
+				System.out.println(fu);
+			}
+
+			e.close();
+		}
+
+	}
+}

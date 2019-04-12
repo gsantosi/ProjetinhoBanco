@@ -1,0 +1,42 @@
+package Interfaces;
+
+public class ControlePagament {
+
+	public double base;
+	public double taxa;
+	
+
+ public ControlePagament( double base, double taxa) {
+ 
+	 this.base = base;
+	 this.taxa = taxa;
+ }
+ 
+  public double getBase() {
+	  return base;
+  }
+  
+  public double getTaxa() {
+	  return taxa;
+  }
+  
+  public void setBase(double base) {
+	  this.base = base;
+  }
+  
+  public void serTaxa(double taxa) {
+	  this.taxa = taxa;
+  }
+
+  public double TatalPagamento() {
+	  return getBase() + getTaxa();
+  }
+  
+  
+  
+
+
+
+}
+
+

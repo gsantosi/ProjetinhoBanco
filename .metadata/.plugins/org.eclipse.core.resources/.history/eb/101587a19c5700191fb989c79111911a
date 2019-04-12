@@ -1,0 +1,17 @@
+package Area;
+
+public class Circulo extends Shape {
+
+	public Circulo(Cor color) {
+		super(color);
+		
+	}
+	@Override
+	public double Calculo() {
+	   double soma = 0.0;
+	   return soma;
+	}
+ 
+	
+	
+}

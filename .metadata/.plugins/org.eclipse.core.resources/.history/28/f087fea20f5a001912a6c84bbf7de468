@@ -1,0 +1,14 @@
+package Arquivo;
+
+import java.util.Scanner;
+
+public class ArquivoClass {
+   public static void main (String[] args) {
+	   
+	   Scanner e = new Scanner(System.in);
+	   
+	   System.out.println("Digite o caminho do seu arquivo:");
+	   
+	   
+   }
+}

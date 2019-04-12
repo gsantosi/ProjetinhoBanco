@@ -1,0 +1,51 @@
+package FuncionariosPolimorfismo;
+
+public class Funcionario {
+
+	public String nome;
+	public int hr;
+	public double vhr;
+	
+	
+	public Funcionario() {
+		super();
+	}
+	
+	public Funcionario(String nome, int hr, double vhr) {
+		
+		this.nome = nome;
+		this.hr = hr;
+		this.vhr = vhr;
+	}
+	
+	public String getNome() {
+		return nome;
+	}
+	
+	public int  getHr() {
+		return hr;
+	}
+	
+	public double getVhr() {
+		return vhr;
+	}
+	
+    public void setNome(String nome) {
+    	this.nome = nome;
+    } 
+    
+    public void setHr(int hr) {
+    	this.hr = hr;
+    }
+    
+    public void setVhr(double vhr) {
+    	this.vhr = vhr;
+    }
+    
+    public double Pagamentoo(double valor) {
+    	 valor = hr*vhr;
+    return valor;
+    }
+
+
+}

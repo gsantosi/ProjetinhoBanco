@@ -1,0 +1,24 @@
+package Excecao;
+
+import java.util.Scanner;
+
+public class excecaoEx1 {
+	public static void main (String [] args) {
+	   
+      Scanner e = new Scanner(System.in);
+      
+      try {
+      String[] vetor = e.nextLine().split(" ");
+      int position = e.nextInt();
+      System.out.println(vetor[position]);
+      }
+      catch(ArrayIndexOutOfBoundsException i) {
+    	  System.out.println("Posição invalida");
+      }
+      System.out.println("Fim do programa.");
+
+      e.close();
+   
+   }
+
+}

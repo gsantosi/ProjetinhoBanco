@@ -1,0 +1,8 @@
+package FuncionarioFixacao;
+
+public class FuncionarioTer extends Funcionario {
+
+	public double extra;
+	
+	
+}

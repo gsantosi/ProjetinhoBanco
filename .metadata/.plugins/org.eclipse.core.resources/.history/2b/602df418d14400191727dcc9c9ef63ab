@@ -1,0 +1,60 @@
+package br.com.innocencio.estudos;
+
+import java.util.Scanner;
+
+public class Pessoas {
+	public  static void main (String [] args) {
+        Scanner e = new Scanner(System.in);
+        String opcao;
+        int usuario = 0;
+	
+        
+        Masculino Ma = new Masculino ();
+        Mulher Mf = new Mulher ();
+       
+       
+       
+      
+       do {
+    	   System.out.println("Qual o sexo? [M/F] ");
+           int sexo = e.nextInt();
+    	   
+           System.out.println("Digte a sua idade");
+    	    int idade = e.nextInt();
+    	   System.out.println("Digite a cor do Cabelo");
+    	   System.out.println("______________________");
+    	   System.out.println("|------[1]-Preto-----|");
+    	   System.out.println("|------[2]-Castanho--|");
+    	   System.out.println("|------[3]-Loiro-----|");
+    	   System.out.println("|------[4]-Ruivo-----|");
+    	   System.out.println("______________________");
+    	   int Cor = e.nextInt();
+    	      if (Cor == 1) {
+      	    	     System.out.println("Preto");	  
+    	      
+    	      }else if (Cor == 2) {
+    	    	  System.out.println("Castanho");
+    	    	  
+    	      }else if (Cor == 3) {
+    	    	  System.out.println("Loiro");
+    	      
+    	      }else if (Cor == 4) {
+    	    	  System.out.println("Ruivo");
+    	      }else {
+    	    	  System.out.println("Cor de cabelo não selecionada!");
+    	      }
+    	      
+    	     System.out.println("Quer continuar?");
+    	     opcao = e.next();
+    	 
+        }
+       }while (opcao.equalsIgnoreCase("S"));
+       System.out.println("Total de homens maior de 18 e cabelos castanhos é:" );
+          
+           
+       } 
+
+ }
+
+
+

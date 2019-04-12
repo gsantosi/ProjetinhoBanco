@@ -1,0 +1,26 @@
+package Interfaces;
+
+import java.util.Date;
+
+public class CarMoni {
+
+	public Date datainicio;
+	public Date fatafim;
+	
+	ModeloCarro modelo;
+	
+	public CarMoni(Date datainicio, Date datafim, ModeloCarro modelo ){
+		
+		this.datainicio = datainicio;
+		this.datafim = datafim;
+		this.modelo = modelo;
+	}
+	
+	public Date getDataini() {
+		return dataini;
+	}
+	
+	
+	
+	
+}

@@ -1,0 +1,28 @@
+package Interfaces;
+
+import java.util.Date;
+
+public class AluguelCarro {
+
+	public Date datainicio;
+	public Date datafim;
+	
+	ModeloCarro modelo;
+	ControlePagament pagamento;
+	
+	public AluguelCarro(Date datainicio, Date datafim, ModeloCarro modelo ){
+		
+		this.datainicio = datainicio;
+		this.datafim = datafim;
+		this.modelo = modelo;
+	}
+	
+	public Date getDatainicio() {
+		return datainicio;
+	}
+	
+	public Date getDatafim() {
+		return datafim;
+	}
+
+}

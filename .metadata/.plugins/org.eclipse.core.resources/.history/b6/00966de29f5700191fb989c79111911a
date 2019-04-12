@@ -1,0 +1,27 @@
+package Area;
+
+public class Retangulo extends Shape {
+
+	public double raio;
+	
+	public Retangulo(Cor color, double raio) {
+		super(color);
+		
+		this.raio = raio;
+	}
+	
+	public double getRaio() {
+		return raio;
+	}
+	
+	public void setRaio(double raio) {
+		this.raio = raio;
+	}
+	
+	@Override
+	public double Calculo(double valor, double raio) {
+		double soma = 0.0;
+		return soma;
+	}
+
+}

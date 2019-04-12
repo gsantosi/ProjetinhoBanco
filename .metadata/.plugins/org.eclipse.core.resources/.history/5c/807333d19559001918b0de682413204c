@@ -1,0 +1,50 @@
+package Excecao;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class excecaoEx1 {
+	public static void main (String [] args) {
+	   
+      Scanner e = new Scanner(System.in);
+      
+     Metodo1();
+
+      System.out.println("Fim do programa.");
+	 } 
+	public static void Metodo1() {
+	System.out.println("------------------- INICIO Metodo1 --------------------");
+
+	Metodo2();
+	
+	System.out.println("--------------- FIM Metodo1 -----------------");
+	}
+      public static void Metodo2(){
+    	 
+    	  Scanner e = new Scanner(System.in);
+    	  
+    	  System.out.println("---------- INICIO Metodo2 -----------");
+    	  try {
+    	      String[] vetor = e.nextLine().split(" ");
+    	      int position = e.nextInt();
+    	      System.out.println(vetor[position]);
+    	      }
+    	      catch(ArrayIndexOutOfBoundsException i) {
+    	    	  System.out.println("Posição invalida");
+    	      }
+    	      catch (InputMismatchException i) {
+    	    	  System.out.println("Favor digita um numero, na proxima vez!");
+    	     }
+    	  
+    	  
+    	  System.out.println("---------- FIM Metodo2 -----------");
+    	  
+    	  
+      e.close();
+   
+   
+     
+      
+      }
+
+}

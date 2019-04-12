@@ -1,0 +1,82 @@
+package br.com.innocencio.estudos;
+
+import java.util.Scanner;
+
+public class Pessoas {
+	public  static void main (String [] args) {
+        Scanner e = new Scanner(System.in);
+        String opcao;
+        int usuario = 0;
+        int contador1;
+        int contador2;
+        int contador3;
+        int contador4;
+        int contadorF1;
+        int contadorF2;
+        int contadorF3;
+        int contadorF4;
+	    String sexo;
+        
+        Masculino Ma = new Masculino ();
+        Mulher Mf = new Mulher ();
+       
+       
+       
+      
+       do {
+    	   System.out.println("Qual o sexo? [M/F] ");
+           sexo = e.nextInt();
+    	   
+           System.out.println("Digte a sua idade");
+    	    int idade = e.nextInt();
+    	   System.out.println("Digite a cor do Cabelo");
+    	   System.out.println("______________________");
+    	   System.out.println("|------[1]-Preto-----|");
+    	   System.out.println("|------[2]-Castanho--|");
+    	   System.out.println("|------[3]-Loiro-----|");
+    	   System.out.println("|------[4]-Ruivo-----|");
+    	   System.out.println("______________________");
+    	   int Cor = e.nextInt();
+    	      if (Cor == 1) {
+      	    	     System.out.println("Preto");	  
+    	      
+    	      }else if (Cor == 2) {
+    	    	  System.out.println("Castanho");
+    	    	  
+    	      }else if (Cor == 3) {
+    	    	  System.out.println("Loiro");
+    	      
+    	      }else if (Cor == 4) {
+    	    	  System.out.println("Ruivo");
+    	      }else {
+    	    	  System.out.println("Cor de cabelo não selecionada!");
+    	      }
+    	      
+    	     System.out.println("Quer continuar?");
+    	     opcao = e.next();
+    	 
+       if (sexo.equalsIgnoreCase("M") && idade<= 18 && Cor == 1) {
+    	   contador1 ++;
+       }
+       if (sexo.equalsIgnoreCase("M") && idade<= 18 && Cor == 2) {
+    	   contador3 ++;
+       }
+       if (sexo.equalsIgnoreCase("M") && idade<= 18 && Cor == 3) {
+    	   contador3 ++;
+       }
+       if (sexo.equalsIgnoreCase("M") && idade<= 18 && Cor == 4) {
+    	   contador4 ++;
+       }
+       
+       }
+       while (opcao.equalsIgnoreCase("S"));
+       System.out.println("Total de homens maior de 18 e cabelos castanhos é:" + contador1 );
+       System.out.println("Total de homens maior de 18 e cabelos castanhos é:" + contador2 );
+       System.out.println("Total de homens maior de 18 e cabelos castanhos é:" + contador1 );
+       System.out.println("Total de homens maior de 18 e cabelos castanhos é:" + contador1 );   
+       } 
+
+ }
+
+
+

@@ -1,0 +1,33 @@
+package FuncionariosPolimorfismo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class FuncionarioTer extends Funcionario {
+
+	public double add;
+
+	List<FuncionarioTer> array = new ArrayList<>();
+	Funcionario f = new Funcionario();
+
+	public FuncionarioTer() {}
+	
+	public FuncionarioTer(String nome, int hr, double vhr, double add) {
+		super(nome, hr, vhr);
+		this.add = add;
+	}
+
+	public double getAdd() {
+		return add;
+	}
+
+	public void setAdd(double add) {
+		this.add = add;
+	}
+    @Override
+	public double Pagamento() {
+		return super.Pagamento() + add * 1.1;
+	}
+
+	
+}

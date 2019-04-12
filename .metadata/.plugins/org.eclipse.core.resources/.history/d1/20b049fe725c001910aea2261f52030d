@@ -1,0 +1,8 @@
+package LogicaInterfaces;
+
+public interface FinanceiroTaxa {
+
+	double getTaxa();
+	
+	default double PagamentoTaxa(double preco, int mes);
+}

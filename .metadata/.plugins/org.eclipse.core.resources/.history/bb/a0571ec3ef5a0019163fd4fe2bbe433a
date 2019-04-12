@@ -1,0 +1,18 @@
+package InterfacesFixação;
+
+import java.util.Date;
+
+public class AluguelCarro {
+
+	public Date datainicio;
+	public Date datafim;
+	
+	
+	ModeloCarro modelo;
+	ControlePagamento pagamento;
+	
+	
+	
+	
+	
+}

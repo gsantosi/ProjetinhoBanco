@@ -1,0 +1,23 @@
+package FuncionariosPolimorfismo;
+
+public class FuncionarioTer extends Funcionario {
+   
+	public double add;
+	
+	public FuncionarioTer() {
+		super();
+	}
+	
+  public FuncionarioTer(String nome, int hr, double vhr, double add) {
+	  super (nome,hr,vhr);
+	       this.add = add;
+  }	
+	
+  public double getAdd() {
+	  return add;
+  }
+  
+  public void setAdd( double add) {
+	  this.add = add;
+  }
+}

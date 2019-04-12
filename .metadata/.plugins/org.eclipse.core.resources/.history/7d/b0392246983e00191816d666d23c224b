@@ -1,0 +1,40 @@
+package br.com.innocencio;
+
+public class ContaC {
+	
+	 String titular;
+	 int Saldo;
+	 int Saque;
+     
+
+	 public ContaC(String titular, double Saldo, int Saque) {
+			super();
+			this.titular = titular;
+			this.Saldo = Saldo;
+			this.Saque = Saque;
+		}
+
+	public String getTitular() {
+		return titular;
+	}
+
+	public double getSaldo() {
+		return Saldo;
+	}
+
+	public int getSaque() {
+		return Saque;
+	}
+
+	public void setTitular(String titular) {
+		this.titular = titular;
+	}
+	public void setSaldo (double Saldo) {
+		this.Saldo = Saldo;
+	}
+	public void setSaque (int Saque) {
+		this.Saque = Saque;
+	}
+	
+	}
+

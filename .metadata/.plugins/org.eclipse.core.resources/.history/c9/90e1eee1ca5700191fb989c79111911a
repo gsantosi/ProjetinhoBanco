@@ -1,0 +1,46 @@
+package ImpostodeRenda;
+
+public class PessoaFisica extends Pessoa {
+
+	public double gastos;
+
+	public PessoaFisica(String nome, double renda, double gastos) {
+		super(nome, renda);
+
+		this.gastos = gastos;
+	}
+
+	public double getGastos() {
+		return gastos;
+	}
+
+	public void setGastos(double gastos) {
+		this.gastos = gastos;
+	}
+
+	@Override
+	public double Taxa(double valor) {
+		if (renda < 2000.00) {
+			renda -= renda * (15 / 100);
+			if (valor == 0) {
+
+				return ;
+			} else {
+				valor = valor * (50 / 100);
+				return renda += valor;
+			}
+
+		} else {
+			renda -= renda * (25 / 100);
+			if (valor == 0) {
+
+				return renda;
+			} else {
+				valor = valor * (50 / 100);
+				return renda += valor;
+			}
+		}
+
+	}
+
+}

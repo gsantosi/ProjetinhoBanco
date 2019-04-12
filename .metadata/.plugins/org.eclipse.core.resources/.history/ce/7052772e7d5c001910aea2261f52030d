@@ -1,0 +1,36 @@
+package Facul;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class soma {
+   public static void main (String [] args) {
+	  
+	   Locale.setDefault(Locale.US);
+	   Scanner e = new Scanner(System.in);
+	   List<Teste> array = new ArrayList<>();
+	   Teste t = null;
+	   
+	   int numero1 = 0;
+	   int numero;
+	   
+	   for (int i=0; i<=5; i++) {
+		   
+		    System.out.println("Digite um numero:");
+		     numero = e.nextInt();
+		     
+		      
+		     array.add(new Teste(numero));
+	   }
+	      
+	   
+	      if (numero1 > t.getNumero() && numero1 < t.getNumero()) {
+		   
+	   }
+	
+	
+ 
+   }
+}
